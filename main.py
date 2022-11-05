@@ -1,6 +1,5 @@
 # import libary 
 import streamlit as st
-import pandas as pd
 import knn
 import time
 
