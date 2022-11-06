@@ -5,6 +5,7 @@ import time
 
 # pige title
 st.set_page_config(
+    page_title="Prediksi Penyakit Jantung",
     page_icon=":dolphin:",
 )
 
@@ -12,11 +13,11 @@ st.set_page_config(
 # hide menu
 hide_streamlit_style = """
 
-<title>Prediksi Penyakit Jantung</title>
+
+
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-
 </style>
 
 """
