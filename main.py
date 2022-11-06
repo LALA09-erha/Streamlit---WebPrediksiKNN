@@ -9,41 +9,15 @@ st.set_page_config(
     page_icon=":dolphin:",
 )
 
-def set_page_title(title):
-    st.sidebar.markdown(unsafe_allow_html=True, body=f"""
-        <iframe height=0 srcdoc="<script>
-            const title = window.parent.document.querySelector('title') \
-                
-            const oldObserver = window.parent.titleObserver
-            if (oldObserver) {{
-                oldObserver.disconnect()
-            }} \
-
-            const newObserver = new MutationObserver(function(mutations) {{
-                const target = mutations[0].target
-                if (target.text !== '{title}') {{
-                    target.text = '{title}'
-                }}
-            }}) \
-
-            newObserver.observe(title, {{ childList: true }})
-            window.parent.titleObserver = newObserver \
-
-            title.text = '{title}'
-        </script>" />
-    """)
-    
-set_page_title("Prediksi Penyakit Jantung") 
-
 
 # hide menu
 hide_streamlit_style = """
+
+<title>Prediksi Penyakit Jantung</title>
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-section.css-1vencpc.e1fqkh3o11 {min-width: 0px; width:0px !important;}
-.css-1vencpc {min-width: 0px; width:0px !i;}
-.e1fqkh3o11 {min-width: 0px; width:0px;}
+
 </style>
 
 """
