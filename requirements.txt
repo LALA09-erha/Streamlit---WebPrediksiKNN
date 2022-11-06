@@ -2,3 +2,4 @@ pandas==1.5.1
 joblib==1.2.0
 python-time
 streamlit
+scikit-learn==1.1.3
