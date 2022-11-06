@@ -5,7 +5,6 @@ import time
 
 # pige title
 st.set_page_config(
-   page_title="Prediksi Penyakit Jantung",
     page_icon=":dolphin:",
 )
 
