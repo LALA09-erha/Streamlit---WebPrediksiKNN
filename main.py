@@ -3,6 +3,12 @@ import streamlit as st
 import knn
 import time
 
+# pige title
+st.set_page_config(
+   page_title="Prediksi Penyakit Jantung",
+    page_icon=":dolphin:",
+)
+
 
 # hide menu
 hide_streamlit_style = """
