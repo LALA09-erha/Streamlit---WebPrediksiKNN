@@ -5,7 +5,7 @@ import time
 
 # pige title
 st.set_page_config(
-    page_title="Prediksi Penyakit Jantung",
+    page_title="Klasifikasi Penyakit Jantung",
     page_icon="https://e7.pngegg.com/pngimages/594/747/png-clipart-heart-heart-cartoon-heart.png",
 )
 
@@ -37,7 +37,7 @@ about = kolom[2].button('About')
 
 # home page
 if home==False and about==False or home==True and about==False:
-    st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Penyakit Jantung</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Klasifikasi Penyakit Jantung</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; color: white;'>Harap Diisi Semua Kolom</p>", unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
@@ -70,15 +70,15 @@ if home==False and about==False or home==True and about==False:
         with st.spinner("Tunggu Sebentar Masih Proses..."):
             if prediksi[-1] == 0:
                 time.sleep(1)
-                st.success("Hasil Prediksi : "+nama+" Tidak Ada Penyakit Jantung")
+                st.success("Hasil Klasifikasi : "+nama+" Tidak Ada Penyakit Jantung")
             else:
                 time.sleep(1)
-                st.warning("Hasil Prediksi : "+nama+" Ada Penyakit Jantung")
+                st.warning("Hasil Klasifikasi : "+nama+" Ada Penyakit Jantung")
 
 # about page
 if about==True and home==False:
     st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h1>", unsafe_allow_html=True)
-    st.write('Sistem Predeksi Penyakit Jantung adalah sebuah sistem yang bertujuan untuk memprediksi penyakit jantung dini. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
+    st.write('Sistem Klasifikasi Penyakit Jantung adalah sebuah sistem yang bertujuan untuk mengklasifikasikan penyakit jantung dini. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
     st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 11</b> . Dataset yang digunakan memiliki <b>5 fitur</b> termasuk kelas.</p>", unsafe_allow_html=True)
     st.write('Alasan menggunakan model KNN dengan parameter k = 11 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut. Sebelumnya sudah dilakukan dua analisa dan percobaan untuk model lainnya, lebih lengkapnya pada link dibawah.')
     st.markdown("<p> <a class='text-warning' target='_blank' href='https://lala09-erha.github.io/datamining/notebooks8.html'>Percobaan model pertama</a> | <a target='_blank' class='text-warning' href='https://lala09-erha.github.io/datamining/notebooks10.html'>Percobaan model kedua</a></p>", unsafe_allow_html=True)
