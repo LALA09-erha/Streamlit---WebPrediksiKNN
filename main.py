@@ -88,10 +88,7 @@ if about==True and home==False:
     st.info("Dataset : [link](%s)" % url,icon="ℹ️")
     st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 11</b> .</p>", unsafe_allow_html=True)
     st.write('Alasan menggunakan model KNN dengan parameter k = 11 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut. Sebelumnya sudah dilakukan dua analisa dan percobaan untuk model lainnya, lebih lengkapnya pada link dibawah.')
-    st.info("[Percobaan model pertama](%s) | [Percobaan model Kedua](%s)" % (n8,n9),icon="ℹ️")
-
-    # st.markdown("<p> <a class='text-warning' target='_blank' href='https://lala09-erha.github.io/datamining/notebooks8.html'>Percobaan model pertama</a> | <a target='_blank' class='text-warning' href='https://lala09-erha.github.io/datamining/notebooks10.html'>Percobaan model kedua</a></p>", unsafe_allow_html=True)    
-        
+    st.info("[Percobaan model pertama](%s) | [Percobaan model Kedua](%s)" % (n8,n9),icon="ℹ️")        
 
             
 
