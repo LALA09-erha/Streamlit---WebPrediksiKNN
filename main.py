@@ -34,7 +34,7 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 
 # insialisasi web
 kolom = st.columns((2, 0.48, 2.7))
-home = kolom[1].button('Home')
+home = kolom[1].button('Main')
 about = kolom[2].button('About')
 
 # home page
