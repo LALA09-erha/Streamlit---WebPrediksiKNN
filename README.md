@@ -2,4 +2,4 @@
 Menggunakan Model KNN dengan K=11 menggunakan dataset 5 fitur
 
 ## Demo
-https://klasifikasipenyakitjantung.streamlit.app/
+https://prediksipenyakitjantung.streamlit.app/
