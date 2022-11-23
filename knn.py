@@ -15,3 +15,6 @@ def normalisasi(x):
 def knn(x):
     
     return joblib.load('model/modelKNN11.pkl').predict(x)
+
+
+# print(normalisasi([50,1,120,200]))
