@@ -33,7 +33,8 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 
 
 # insialisasi web
-kolom = st.columns((2, 0.48, 2.7))
+st.markdown("<p style='text-align: center; color: white; margin:0 ; padding:0;'>MENU</p>", unsafe_allow_html=True)
+kolom = st.columns((2.2, 0.48, 2.7))
 home = kolom[1].button('🏠')
 about = kolom[2].button('📰')
 
