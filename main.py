@@ -160,13 +160,15 @@ if home==False and about==False or home==True and about==False:
 if about==True and home==False:
     url = 'https://www.kaggle.com/datasets/shrutipandit707/heartdisease'
     n8 = 'https://lala09-erha.github.io/datamining/notebooks8.html'
-    n9 = 'https://lala09-erha.github.io/datamining/notebooks9.html'
+    n9 = 'https://lala09-erha.github.io/datamining/notebooks10.html'
+    s8 = 'https://lala09-erha.github.io/datamining/Salinan8.html'
+    s10 = 'https://lala09-erha.github.io/datamining/Salinan10.html'
     st.markdown("<h2 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h2>", unsafe_allow_html=True)
     st.write('Sistem Prediksi Penyakit Jantung adalah sebuah sistem yang bertujuan untuk memprediksi penyakit jantung dini. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
     st.markdown("<p  color: white;'>Dataset yang digunakan pada sistem ini memiliki <b>5 fitur</b> termasuk kelas, Dataset yang digunakan dalam sistem ini menggunakan data yang didapatkan melalui repository dataset yang berada pada website Kaggle.com . Dataset yang berjudul <i>Heart Disease</i>, dataset untuk mendeteksi apakah seseorang mengidap Penyakit Jantung atau tidak berdasarkan berbagai faktor seperti <i>cholestrol</i>,<i>blood pressure</i>,<i>sex</i>,<i>age</i>. Lebih lengkapnya pada link dibawah.</p>", unsafe_allow_html=True)
     st.info("Dataset : [link](%s)" % url,icon="ℹ️")
-    st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 11</b> dengan akurasi 75%' jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa normalisasi akurasi yang didapat sebesar 70% .</p>", unsafe_allow_html=True)
-    st.write('Selanjutnya memakai model Bagging Clasfifier dengan base_estimator = gaussianNB dan n_estimators = 6 dengan akurasi sebesar 77%" jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa tanpa normalisasi data menggunakan n_estimators = 2 dengan akurasi sebesar 77%.')
-    st.write('Terakhir memakai model Random Forest dengan n_estimators = 13 dengan akurasi sebesar 72%" jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa tanpa normalisasi data menggunakan n_estimators = 14 dengan akurasi sebesar 72% juga.')
+    st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 11</b> dengan akurasi 75% jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa normalisasi akurasi yang didapat sebesar 70% .</p>", unsafe_allow_html=True)
+    st.write('Selanjutnya memakai model Bagging Clasfifier dengan base_estimator = gaussianNB dan n_estimators = 6 dengan akurasi sebesar 77% jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa tanpa normalisasi data menggunakan n_estimators = 2 dengan akurasi sebesar 77%.')
+    st.write('Terakhir memakai model Random Forest dengan n_estimators = 13 dengan akurasi sebesar 72% jika sebelumnya data dinormalisasi terlebih dahulu, namun jika tanpa tanpa normalisasi data menggunakan n_estimators = 14 dengan akurasi sebesar 72% juga.')
     st.write('Alasan menggunakan ketiga model tersebut adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut. Sebelumnya sudah dilakukan empat analisa dan percobaan untuk model lainnya dengan kondisi data yang tanpa menggunakan maupun menggunakan dinormalisasi, lebih lengkapnya pada link dibawah.')
-    st.info("[Percobaan model pertama](%s) | [Percobaan model Kedua](%s)" % (n8,n9),icon="ℹ️")        
+    st.info("[Percobaan model pertama](%s) | [Percobaan model Kedua](%s) | [Percobaan model Ketiga](%s) | [Percobaan model Keempat](%s)" % (n8,n9,s8,s10),icon="ℹ️")        
