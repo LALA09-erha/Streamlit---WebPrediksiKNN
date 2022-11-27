@@ -90,10 +90,3 @@ if about==True and home==False:
     st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 11</b> .</p>", unsafe_allow_html=True)
     st.write('Alasan menggunakan model KNN dengan parameter k = 11 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut. Sebelumnya sudah dilakukan dua analisa dan percobaan untuk model lainnya, lebih lengkapnya pada link dibawah.')
     st.info("[Percobaan model pertama](%s) | [Percobaan model Kedua](%s)" % (n8,n9),icon="ℹ️")        
-
-            
-
-
-
-
-
