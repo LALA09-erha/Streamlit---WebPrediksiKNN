@@ -71,8 +71,8 @@ if home==False and about==False or home==True and about==False:
             if model_1 or model_2 or model_3:
                 if preprosesing == 'Normalization (Min-Max)':
                     # cek jenis kelamin
-                    #0 = laki-laki
-                    #1 = perempuan
+                    #1 = laki-laki
+                    #0 = perempuan
                     if jk == 'Laki-laki':
                         jk = 0
                     else:
@@ -112,12 +112,12 @@ if home==False and about==False or home==True and about==False:
                                 st.warning("Hasil Prediksi Metode Random Forest: "+nama+" Ada Penyakit Jantung")
                 else:
                     # cek jenis kelamin
-                    #0 = laki-laki
-                    #1 = perempuan
+                    #1 = laki-laki
+                    #0 = perempuan
                     if jk == 'Laki-laki':
-                        jk = 0
-                    else:
                         jk = 1
+                    else:
+                        jk = 0
                     # normalisasi data
                     data = metode.normal([umur,jk,bp,chol])
                     # prediksi data
